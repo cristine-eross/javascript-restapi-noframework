@@ -1,0 +1,16 @@
+{
+  "name": "restapi_node_no_framework",
+  "version": "1.0.0",
+  "description": "Just some practice with Node.js basics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Cristine",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
