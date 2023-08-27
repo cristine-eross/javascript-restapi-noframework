@@ -1,0 +1,152 @@
+[
+    {
+        "question":"What is JavaScript?",
+        "answer":"JavaScript is a programming language that was originally used for converting static web pages into interactive, dynamic web pages. It's communicating with the JavaScript Engine of the user's browser, this is called the client side (V8 in Chrome, Spider Monkey in Firefox, Core is Safari, Chakra in Edge). As it was constantly updated with new features each year, nowadays not only the client side, but the server side can be written in Javascript too using a runtime engine called Node and full-stack frameworks, such as Next.js.",
+        "id":"001"
+    },
+    {
+        "question":"What are datatypes in JavaScript?",
+        "answer":"The datatype in each programming language determines the value that can be stored in a variable. In JavaScript there are primitive datatypes (number, string, boolean, undefined, null, BigInt, symbol) and non-primitive datatypes (any data type that is not a primitive data type, is of Object type, including array, function, regex and  date). For example `let age = 25 (number); let greeting = 'hello'(string)`",
+        "id":"002"
+    },
+    {
+        "question":"Explain immutability in JavaScript.",
+        "answer":"In JavaScript all primitive datatypes are immutable, which means their values cannot be changed or modified once they are created. That doesn't mean they cannot be reasigned, but whenever we reasign a value for the variable, the JS Engine doesn't change or delete the existing variable in memory, but creates a new memory space for that new value.",
+        "id":"003"
+    },
+    {
+        "question":"What are the differences between primitive and non-primitive datatypes?",
+        "answer":"Primitive data-types are immutable, simple and they can hold only single values, while non-primitive datatypes are mutable, complex, and they can hold multiple values.",
+        "id":"004"
+    },
+    {
+        "question":"What is an array?",
+        "answer":"An array is a non-primitive datatype. It's used to store a collection of values, such as a list of numbers or a list of strings. For example: `let coffeeTypes: ['Latte', 'Cappuccino', 'Mocha', 'Americano', 'Espresso']`. Their elements can be searched, sorted or modified with different array methods.",
+        "id":"005"
+    },
+    {
+        "question":"What is a function?",
+        "answer":"A function is a non-primitive complex dataype, basically a block of code that performs a specific task or returns a value. For example: `function addAandB(a,b){return a+b;}console.log(add(2,3));` Where the output will be `5`.",
+        "id":"006"
+    },
+    {
+        "question":"What is an object in JavaSctipt?",
+        "answer":"An object is a non-primitive datatype which can hold multiple values or a combination of values and functions. For example: `let person = {name: 'John', age: 23}, grades:['A', 'B', 'C'], greet: function(){console.log(this.name);};}`",
+        "id":"007"
+    },
+    {
+        "question":"What is scope in JavaScipt?",
+        "answer":"Scope determines the accessibility of variables, objects or functions from different parts of the code. Before ES6 (2015) JavaScript has two kinds of scopes: global scope (access from anywhere whithin the program) and function scope, which is also called local scope (access only within the function where it was declared). ES6 however introduced two new keywords, the `let` and `const`, which provide block scope in JavaScipt. This means that these two variables cannot be accessed from outside the {block} when they are declared inside one.",
+        "id":"008"
+    },
+    {
+        "question":"What is the difference between `var`, `let` and `const`?",
+        "answer":"The 'var' keyword for variables can have function or global scope and can be reasigned, while the `let` and `const` were introduced in ES6 and they can have ether global or block scope, and `const` should be used to store variables which won't be reasigned, and `let` is for the cases when we need to reasign the value of the variable, as it changes over time.",
+        "id":"009"
+    },
+    {
+        "question":"What is a loop in JavaScipt?",
+        "answer":"A loop is a programming way to run a set of instructions (code) repeatedly until a certain condition is met. The loops can be can be set to keep running all the time or exit, when the condition is met. Loops are one way to execute a statement for a variable a number of times. The same effect can be achieved with recursion too. In JavaScript we have five types of loops: `for`, `while`, `do-while`, `for...of` and `for...in`.",
+        "id":"010"
+    },
+    {
+        "question":"What is the difference between `for`, `while` and `do-while` loops?",
+        "answer":"The `for loops` allow us to iterate a block of code for a specific number of times. For example `for (let i=0; i<5; i++) {console.log(i);};` Where the output will be `0 1 2 3 4`. The `while loop` allows us to iterate a block of code while a certain condition is true. Example `let j=0; while (j<5) {console.log(j); j++};` Where the output will be the same. The `do-while loop`is similar to the `while`, except the block of code is executed at least once even if the condition is false. Example `let k=0; do{console.log(k);k++;} while (k<1)`. Here the output will be `0`.",
+        "id":"011"
+    },
+    {
+        "question":"What is the difference between `for...of` and `for...in` loops?",
+        "answer":"The 'for...of loop' is used to loop through the values of an object like an array. It allows you to access each value directly without having to use an index. The `for...in loop` on the other hand allows you to iterate over the keys of an object and access the values associated with those keys. Nowadays it's best practice to reach the same effect with the forEach method.",
+        "id":"012"
+    },
+    {
+        "question":"Explain hoisting in JavaScript.",
+        "answer":"Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.This means that irrespective of where the variables and functions are declared, they are moved on top of the scope. The scope can be both local and global(variable initializations are not hoisted though, only variable declarations).",
+        "id":"013"
+    },
+    {
+        "question":"Explain implicit type coercion.",
+        "answer":"Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types(ie. a string changes into a number if the `+` operator is used).",
+        "id":"014"
+    },
+    {
+        "question":" Is javascript a statically typed or a dynamically typed language?",
+        "answer":"JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.Since javascript is a loosely(dynamically) typed language, variables in JS are not associated with any type. A variable can hold the value of any data type.        ",
+        "id":"015"
+    },
+    {
+        "question":"What is an Immediately Invoked Function in JavaScript?",
+        "answer":"An Immediately Invoked Function ( known as IIFE and pronounced as IIFY) is a function that runs as soon as it is defined.",
+        "id":"016"
+    },
+    {
+        "question":"What do you mean by strict mode in JavaScript?",
+        "answer":"In ES5, a new feature called JavaScript Strict Mode allows you to write a code or a function in a `strict` operational environment. In most cases, this language is 'not particularly severe' when it comes to throwing errors. In 'Strict mode,' however, all forms of errors, including silent errors, will be thrown. As a result, debugging becomes a lot simpler.",
+        "id":"017"
+    },
+    {
+        "question":"What are the characteristics of strict mode?",
+        "answer":"Duplicate arguments are not allowed by developers. In strict mode, you won't be able to use the JavaScript keyword as a parameter or function name. The 'use strict' keyword is used to define strict mode at the start of the script. Strict mode is supported by all browsers. Engineers will not be allowed to create global variables.",
+        "id":"0018"
+    },
+    {
+        "question":"What are higher order functions?",
+        "answer":"Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.        ",
+        "id":"019"
+    },
+    {
+        "question":"Explain `this` keyword.",
+        "answer":"The “this” keyword refers to the object that the function is a property of. The value of the “this” keyword will always depend on the object that is invoking the function. If the function is invoked in the global context, the function is a property of the global object(the window object).",
+        "id":"020"
+    },
+    {
+        "question":"What is forEach() method?",
+        "answer":"The forEach() method calls a function for each element in an array (it's not extended to empty elements). T can do the samme as `for...of` and `for...in`, but with less code, which is better for performance.",
+        "id":"021"
+    },
+    {
+        "question":"What is the difference between `==` and `===` in JavaScript?",
+        "answer":"Double equals is a comparison operator, which transforms the opendands having the same type before comparision. So when you compare string to a number, JavaScript converts the sting into a number, and for example the number 5 will be == to the string '5'. Empty string becomes 0, no numeric value returns a NaN, which returns false. The triple equals is a stric comparison operator which returns false for the values which are not the same type.",
+        "id":"022"
+    },
+    {
+        "question":"What type of functions exist in JavaScript?",
+        "answer":"There are 7 types: named funciton, anonymus function, function expression, arrow function, IFFE, callback function, higher order function.",
+        "id":"023"
+    },
+    {
+        "question":"Give an example for named function in JavaScript.",
+        "answer":"`function sum`(this is the custom name)`(a,b) {return a+b;}; console.log(sum(2,3))`",
+        "id":"024"
+    },
+    {
+        "question":"Give an example for anonymus function.",
+        "answer":"`console.log(function(a,b){return a*b;}(4,5));`",
+        "id":"025"
+    },
+    {
+        "question":"What is a function expression? Give an example.",
+        "answer":"A function expression is a way to define a function by assigning it to a variable. Example:`const add = function sum (a,b) {return a+b}; console log.(add(2,3))`",
+        "id":"026"
+    },
+    {
+        "question":"What are arrow functions in JavaScript? Give an example.",
+        "answer":"Arrow functions were introduced in ES6 and they allow us to write more concise functions. For example if the function has only one statement, and the statement returns a value, we can remove the brackets and the `return` keyword also, so it looks like this: `add(x,y) => x+y; console log(add(5,3))`",
+        "id":"027"
+    },
+    {
+        "question":"What are callback functions?",
+        "answer":"A callback function is a function that is passed as an argument of another function. This technique allows a function to call another function. A callback function always runs after the other function has finished.",
+        "id":"028"
+    },
+    {
+        "question":"Mention some advantages of JavaScript.",
+        "answer":"Javascript is executed on the client-side as well as server-side also. There are a variety of Frontend Frameworks that you may study and utilize. However, if you want to use JavaScript on the backend, you'll need to learn NodeJS. It is currently the only JavaScript framework that may be used on the backend. Javascript is a simple language to learn. Web pages now have more functionality because of Javascript. To the end-user, Javascript is quite quick.",
+        "id":"029"
+    },
+    {
+        "question":"What are types of error in JavaScript?",
+        "answer":"Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well. Logical errors: Logical error: as reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults.",
+        "id":"030"
+    }
+]
