@@ -1,9 +1,10 @@
 const http = require('http')
+const data = require('./data/data.json')
+
 const server = http.createServer((req, res) => {
     res.statusCode = 200
-    res.setHeader('Content-Type', 'text/html')
-    res.write('<h1>Welcome to the wonderful world of backend development.</h1>')
-    res.end()
+    res.writeHead(200, {'Content-Type': 'application/json'})
+    res.end(JSON.stringify(data))
 })
 const PORT = process.env.PORT || 5000
 
